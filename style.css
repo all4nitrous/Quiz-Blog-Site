@@ -157,6 +157,15 @@ nav button {
     flex-direction: column;
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
     background-color: var(--color-bg);
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.nav_profile:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    transition: var(--transition);
 }
 
 .nav_profile ul li a {
@@ -166,9 +175,14 @@ nav button {
     width: 100%;
 }
 
+.nav_profile ul li:last-child a {
+    background: var(--color-red);
+    color: var(--color-white);
+}
 
-
-
+nav li a:hover {
+    color: var(--color-gray-900);
+}
 
 
 
