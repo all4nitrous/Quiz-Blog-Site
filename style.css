@@ -6,7 +6,7 @@
     --color-red-light: hsl(346, 87%, 46%, 15%);
     --color-green: green;
     --color-green-light: hsl(156, 100%, 38%, 15%);
-    --color-gray-900: #ede1cf;
+    --color-gray-900: #fe777d;
     --color-gray-700: #2d2b7c;
     --color-gray-300: rgba(242, 242, 254, 0.3);
     --color-gray-200: rgba(242, 242, 254, 0.7);
@@ -26,6 +26,18 @@
     --card-border-radius-5: 5rem;
 
 }
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background: rgb(229, 165, 93, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background: var(--color-gray-900);
+    border-radius: 0.25rem;
+}
+
 
 /*=====================General==========================*/
 
@@ -183,6 +195,62 @@ nav button {
 nav li a:hover {
     color: var(--color-bg);
 }
+
+/*=====================CATEOGRY==========================*/
+
+.cateogry_button {
+    background: var(--color-primary-light);
+    color: var(--color-bg);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: var(--card-border-radius-2);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.cateogry_button:hover {
+    color: var(--color-white);
+}
+
+/*======================GENREAL POST=========================*/
+
+.post_thumbnail {
+    border-radius: var(--card-border-radius-5) 0;
+    border: 1rem solid var(--color-gray-900);
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+}
+
+.post:hover .post_thumbnail img {
+    filter: saturate(0);
+    transition: filter 500ms ease;
+}
+
+.post_author {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
